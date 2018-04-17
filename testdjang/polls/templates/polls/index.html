@@ -1,6 +1,16 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
 
+{% comment %}
+
+/****load img****/
+<img src=“{% static ‘background.png’ %}”/>
+
+/****import javascript****/
+<script src=“{% static ‘myscript.js’ %}”/>
+
+{% endcomment %}
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
